@@ -1,3 +1,11 @@
-// enum
-const enum Size {Small,Medium, Large};
-console.log(Size.Large);
+//Functions
+
+
+function CheckStringOrNumber(input:any):string
+{
+    if(typeof(input)== typeof(String) )
+        return "string";
+    return "number";
+}
+
+
