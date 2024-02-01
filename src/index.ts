@@ -1,11 +1,12 @@
 //Functions
 
 
-function CheckStringOrNumber(input:any):string
+function CheckStringOrNumber(input:any):void
 {
     if(typeof(input)== typeof(String) )
-        return "string";
-    return "number";
+        console.log("string")
+    console.log("number");
 }
 
+CheckStringOrNumber("abc");
 
