@@ -1,17 +1,5 @@
-//Intersection types
-type Draggable = {
-    drag : ()=>void
-}
-type Resize = {
-    resize : ()=>void
-}
-
-type Widget = Draggable & Resize;
-let textBox:Widget = {
-    drag() {
-        
-    },
-    resize() {
-        
-    },
-}
+// Literal types : limiting values
+type Quantity = 50|100;
+type Quantity2 = 'cm'|'inch';
+let quantity:Quantity = 100;
+let mmmm:Quantity2 = 'cm'
