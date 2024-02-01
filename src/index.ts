@@ -1,2 +1,3 @@
-//tuples
-let user: [number,string,number] = [1,'2',1];
+// enum
+const enum Size {Small,Medium, Large};
+console.log(Size.Large);
