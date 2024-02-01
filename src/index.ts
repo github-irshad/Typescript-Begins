@@ -1,14 +1,12 @@
-//objects
-type Employee = {
-readonly id : number,
-name : string,
-retire : (date:Date)=>number
-};
-
-let employee:Employee = {
-    id :1,
-    name : "",
-    retire(date) {
-        return date.getDay();
-    },
+//Uniontypes
+function KgTolb(weight : number | string)
+{
+    
+    if(typeof weight==='number')
+    {
+        weight.toFixed();
+    }
+    else{
+        weight.toLowerCase();
+    }
 }
