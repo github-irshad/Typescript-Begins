@@ -1,9 +1,8 @@
-//Nullable types
-function greet(name:string|null){
-if(name)
-console.log(name.toLocaleLowerCase);
-else{console.log('Hola');
+//Optional chainng
+type Customer = {birthday?:Date}
+function getCustomer(id:number):Customer | null |undefined{
+return id===0?null:{birthday: new Date}
 }
 
-}
-greet("null")
+let result = getCustomer(0);
+console.log(result?.birthday?.getFullYear);

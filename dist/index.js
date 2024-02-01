@@ -1,10 +1,7 @@
 "use strict";
-function greet(name) {
-    if (name)
-        console.log(name.toLocaleLowerCase);
-    else {
-        console.log('Hola');
-    }
+function getCustomer(id) {
+    return id === 0 ? null : { birthday: new Date };
 }
-greet("null");
+let result = getCustomer(0);
+console.log(result === null || result === void 0 ? void 0 : result.birthday);
 //# sourceMappingURL=index.js.map
